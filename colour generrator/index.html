@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        
+        .glass-button {
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.1);
+            color: rgb(19, 1, 1);
+            transition: all 0.3s ease;
+            padding: 1.5rem 2rem; 
+            border-radius: 0.5rem; 
+            text-decoration: none;
+            transform: scale(2);
+            box-shadow: 10px 10px 5px rgb(207, 98, 234);
+
+
+        }
+
+        .glass-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+    <script src="home.js" defer></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1><a href="index.html" class="text-gray-800 font-bold text-lg">Color Palette Generator</a></h1>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+        <ul class="flex gap-4">
+            
+            
+            <li><a href="genrenate.html" class="text-gray-800 hover:text-blue-500">Generator</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="home flex flex-col justify-center items-center h-screen">
+        <div class="home__animation bg-gradient-to-br from-red-500 via-white-500 to-purple-500 w-screen h-screen fixed animate-spin-slow"></div>
+        
+        
+        <a href="genrenate.html" class="glass-button my-4">Generator</a>
+        
+    </div>
+
+</body>
+</html>
